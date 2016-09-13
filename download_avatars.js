@@ -1,10 +1,14 @@
 const request = require('request');
 const fs = require("fs");
+require('dotenv').config();
+
+var api_token = process.env['GITHUB_API_TOKEN'];
+
 
 var owner = process.argv[2]
 var repo = process.argv[3];
 
-const endpoint = 'https://sammytam0430:34ee1829fc5cebe0af1c94c8675752819255fb4c@api.github.com';
+const endpoint = 'https://sammytam0430:' + api_token + '@api.github.com';
 
 function getRepoContributors(repoOwner, repoName) {
   request.get({
