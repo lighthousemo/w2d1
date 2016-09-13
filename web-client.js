@@ -1,6 +1,6 @@
 const request = require('request');
 
-const endpoint = 'https://api.github.com';
+const endpoint = 'https://sammytam0430:34ee1829fc5cebe0af1c94c8675752819255fb4c@api.github.com';
 
 request.get({
   url: endpoint + '/repos/vmg/redcarpet/issues',
