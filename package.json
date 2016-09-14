@@ -8,6 +8,7 @@
   },
   "author": "",
   "license": "ISC",
+  "FIXME": "Not a big issue, but the packages should be part of dependencies instead of devDependencies because they are both needed to run the program.",
   "devDependencies": {
     "dotenv": "^2.0.0",
     "request": "^2.74.0"
